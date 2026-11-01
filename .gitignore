@@ -1,0 +1,17 @@
+# 模型权重
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+post_training_runs/
+
+# 大数据文件
+*.jsonl
+data/audit.jsonl
+
+# 其它
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env

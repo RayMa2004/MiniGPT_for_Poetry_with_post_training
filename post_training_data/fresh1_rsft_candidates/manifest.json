@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-30T08:15:36.396137+00:00",
+  "tasks_sha256": "a1ac00b60de4659bcec56091bbe0d060e36ca9634fda555c3efc761e2ce50b2c",
+  "checkpoint_sha256": "d8bd05d5983ddd1bb7408c303a12e547007b03eacc55cbedaa16ad882c76ade3",
+  "vocab_sha256": "07eb515c1762df6e2736120b6f6f388f75ab2db52483adeec83ac33cbd03f5b4",
+  "sampling": {
+    "max_new_tokens": 80,
+    "temperature": 0.8,
+    "top_k": 20,
+    "top_p": 0.9,
+    "repetition_penalty": 1.1,
+    "no_repeat_ngram_size": 0
+  },
+  "source": {
+    "post_training/__init__.py": "7661d01a8585bce1dbeb8d37b91b62ef53df9eeedb6fcbda16a5773da81102c7",
+    "post_training/__main__.py": "8edb6451b5d915c120c7bf360d698417a5cf72bb14fcbe9861fbcf59eeeb3ab5",
+    "post_training/compare.py": "37435e6a4f72c3d1bfd8ddbe190ea3addc4e233d5c9bde788b46f15ff7856255",
+    "post_training/core.py": "07848c8b3bac5f63907985f4b1af99b3898f057535795d1be128d3a4aa4dd31f",
+    "post_training/data.py": "5c130df87b40ab2a1185849d5dc9dcd989faff68d9347f2901f4bdca5281027f",
+    "post_training/judge.py": "78bcd7e4edd984c4f777e8673e7f0d73a09c9c60a201992018bf5422e4d2287c",
+    "post_training/learning.py": "b7de806781a489e2069dd663b91a69e33abd88baf70d0f3497e52e07921a55a8",
+    "post_training/pipeline.py": "1edee3e89a5c90f6b642d5aedcb0ec349bfbf71fe272d312b6dd8b28adc92b5d",
+    "post_training/ppo.py": "29c67ac1e3f2a2e481d7ee0e3669180ff6a0bb5b698488fe571defe74e74b90e",
+    "post_training/prepared.py": "825c1f8af412975005b785d0075a8c3cf61b9591c9e605fdb9c402e0a2b7c7a4",
+    "post_training/reward.py": "4f4a30ffd9d06c02d84e48829bd1266169bcc89411e691dd79193feb8c9fa96b",
+    "post_training/rubric.py": "1626bd4d14949a9059c9c27cccc793f41d6031fbb879d83f96076e13e62afae7",
+    "post_training/sample.py": "c9d602ceed2720256a5bc69a78561db91c6b6b1c608814012bd0248eff414979",
+    "post_training/sft.py": "6d40b47ccf967ff16315fa0ac4e8a5430dfae5a015aa6e96a74543137585790f",
+    "model.py": "c0f5a7a33814bfbda905ea3fb38b1f0cdd7a828ecad42f353c3c6f525956ce84",
+    "checkpoint.py": "425f076bb3a6d406440991f270ae8dd342038988d19aff69d1930fa774dc3ae4",
+    "tokenizer.py": "a68c99c35e40727ea1ebf7be3bfec11759e4e1f3f8743528a4ca45e57b94bfce",
+    "generate.py": "eb28b7981365357927491b0052504a4ca7d4bdf1362a752d2d26c9d37bfab214"
+  },
+  "expected_count": 960,
+  "finished_at": "2026-10-30T08:18:28.823748+00:00",
+  "sample_count": 960,
+  "samples_sha256": "9542b431e749e37359889de7253320bfdf4045abfa0a1f2c585b81d77c9f6498"
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "namespace": "fresh1",
+  "task_count": 120,
+  "tasks_sha256": "a1ac00b60de4659bcec56091bbe0d060e36ca9634fda555c3efc761e2ce50b2c",
+  "split_policy": "prefix_group_and_independent_unconditional_pools",
+  "source_prefixes_sha256": "7311faed1c760306209a69a0c08a689b26b9c7668048f35963544bab0a69c957"
+}

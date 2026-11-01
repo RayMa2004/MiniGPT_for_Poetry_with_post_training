@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "created_at": "2026-10-29T07:45:09.467362+00:00",
+  "rule_version": "tang_v2_conservative_1",
+  "rules": {
+    "rule_version": "tang_v2_conservative_1",
+    "min_length": 10,
+    "max_length": 160,
+    "seed": 42,
+    "train_fraction": 0.9,
+    "annotation_patterns": [
+      "^(?:见|参见|载|录自|转录自).*《",
+      "^《[^》]+》",
+      "^同前(?:[。；，,]|$)",
+      "^(?:按(?=[《「『：:]|这|此|诗|本|原)|原卷|原本|底本|一作|又作|原注|校注|校记|注[:：])",
+      "^[^()（）\\[\\]［］【】〔〕〖〗]{0,20}(?:录|本|记|书|集|注|改)作[「『\"“]",
+      "^[^，。；！？()（）\\[\\]［］【】〔〕〖〗]{1,12}(?:云|曰|校|改|作)[:：「『]",
+      "^[^()（）\\[\\]［］【】〔〕〖〗]{0,20}(?:云见|录自|转录自)《",
+      "^以上.*《",
+      "^〖[0-9一二三四五六七八九十]+〗"
+    ],
+    "residual_source_markers": [
+      "《全唐诗》",
+      "《诗渊》",
+      "文镜秘府志",
+      "唐摭言"
+    ]
+  },
+  "rules_canonical_sha256": "09f22f9ed2e52f4ce5be2f3771d2307953cd595fa736aae07bfbc8556fd81d35",
+  "rules_file": {
+    "bytes": 847,
+    "sha256": "4482ae719f0cf1908efb922355ea78e8786f616fe2edda0e5257455f8b6e1678"
+  },
+  "raw_dir": "/mnt/mini_gpt_v2/data/raw",
+  "shard_ids": [
+    0,
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000,
+    11000,
+    12000,
+    13000,
+    14000,
+    15000,
+    16000,
+    17000,
+    18000,
+    19000,
+    20000,
+    21000,
+    22000,
+    23000,
+    24000,
+    25000,
+    26000,
+    27000,
+    28000,
+    29000,
+    30000,
+    31000,
+    32000,
+    33000,
+    34000,
+    35000,
+    36000,
+    37000,
+    38000,
+    39000,
+    40000,
+    41000,
+    42000,
+    43000,
+    44000,
+    45000,
+    46000,
+    47000,
+    48000,
+    49000,
+    50000,
+    51000,
+    52000,
+    53000,
+    54000,
+    55000,
+    56000,
+    57000
+  ],
+  "raw_files": {
+    "poet.tang.0.json": {
+      "bytes": 408405,
+      "sha256": "4f88f429938082523cdc72a1612bd7a7c3e3f7a33f8192c61ae51340efc3c92d"
+    },
+    "poet.tang.1000.json": {
+      "bytes": 477519,
+      "sha256": "6e703b8d8dcedbd6110f6d48d043665ca2131db2035a5bfcef5e59a19aeb6d75"
+    },
+    "poet.tang.2000.json": {
+      "bytes": 417948,
+      "sha256": "ec28efa7e2ae9cdbbba09f0ed186e32ccae47a325ad1e5816b7ad56071c1665a"
+    },
+    "poet.tang.3000.json": {
+      "bytes": 453811,
+      "sha256": "9e4ba2323752b6b9fbdba875cdbc6a26636fe0cabc85fd066370d4915952001f"
+    },
+    "poet.tang.4000.json": {
+      "bytes": 488655,
+      "sha256": "b8a7946c879b9658a6c667a4c55f776fae7e5e00a17789ab06b274c1429afc66"
+    },
+    "poet.tang.5000.json": {
+      "bytes": 467225,
+      "sha256": "a0306e6962cff01639ad9a00b042a201b8dec1f30fa5d768a7b112589887861e"
+    },
+    "poet.tang.6000.json": {
+      "bytes": 470031,
+      "sha256": "982a21d2b15922b406911f1c825785054314c686da86b2155d7aebb362d22771"
+    },
+    "poet.tang.7000.json": {
+      "bytes": 474558,
+      "sha256": "a6fb69d7b4343c904dc56ae5aae34facc2478d196b51c37ceba9d1e2f171b342"
+    },
+    "poet.tang.8000.json": {
+      "bytes": 574248,
+      "sha256": "ac3848e95b02736168003863795de4474838c2d6a71a24ca2a4a280ea5177773"
+    },
+    "poet.tang.9000.json": {
+      "bytes": 476882,
+      "sha256": "b99d6596e3a1fe1a661652383083f92d196b8baf4e461d087081d5e1e1b7a51f"
+    },
+    "poet.tang.10000.json": {
+      "bytes": 613029,
+      "sha256": "b97d1c5509ab62f5b433dee2020c11c4deda4542e276683d1ada6619c34c2113"
+    },
+    "poet.tang.11000.json": {
+      "bytes": 445111,
+      "sha256": "9adf1835246053c821d99af39ce9092e14a94e1baf91740098bd9fc6f6f1cd27"
+    },
+    "poet.tang.12000.json": {
+      "bytes": 440019,
+      "sha256": "ec43d055a219d52ecdb58cd30a8a444189392f0d68b92a41495df1c72c5fd095"
+    },
+    "poet.tang.13000.json": {
+      "bytes": 420898,
+      "sha256": "eb9c85072d7913bb972e07c72f0123e9d7addca22cfd833cb79a5d74b1c76ebf"
+    },
+    "poet.tang.14000.json": {
+      "bytes": 409199,
+      "sha256": "1e366dd3fb5a011091524bed36e4edff5d015bf0ddb14143f298515387dbd9a9"
+    },
+    "poet.tang.15000.json": {
+      "bytes": 422310,
+      "sha256": "0386e58f46517daa3af0e0f385e0223f1efc0dac53afbe8fea64f99074d870b7"
+    },
+    "poet.tang.16000.json": {
+      "bytes": 380057,
+      "sha256": "1c477aef1fc50523f9baf10f29d2d89201a14c4c73001c1c041d0fe8464d11db"
+    },
+    "poet.tang.17000.json": {
+      "bytes": 485658,
+      "sha256": "11bac8333b2042975b9844423d113ff2c6fdf701c8b08a5b3aaa6bc9472222de"
+    },
+    "poet.tang.18000.json": {
+      "bytes": 537556,
+      "sha256": "37543a147d16e3576d5f45ba8f7b8b51fc311bc10eddae9440f16f2d5ae885c2"
+    },
+    "poet.tang.19000.json": {
+      "bytes": 431381,
+      "sha256": "dea74b41bc807ce2527bb119862a251e3a92b6f69bdf9f98b1434a8336830542"
+    },
+    "poet.tang.20000.json": {
+      "bytes": 477671,
+      "sha256": "8ccf0783888b15bec60d0253e278cd4b67e94a77725df8ed079d4d8062d050b4"
+    },
+    "poet.tang.21000.json": {
+      "bytes": 572847,
+      "sha256": "bddae814c82bf6a9fd294504aa48794bca5f03e986110739b1577aa811125cbd"
+    },
+    "poet.tang.22000.json": {
+      "bytes": 557450,
+      "sha256": "d7e7efe3f67415455ae93974a5aa67427e99f6713fde27920bfb657ad3204c4a"
+    },
+    "poet.tang.23000.json": {
+      "bytes": 444324,
+      "sha256": "220a535a762349ec1beed00f1dc11293ccefc70bda15c5258bbcab208b14337f"
+    },
+    "poet.tang.24000.json": {
+      "bytes": 462622,
+      "sha256": "2f40a4ec0e4469c29f0f028d7a4ad73b83850aa271be9b63ea0c08de6e094dee"
+    },
+    "poet.tang.25000.json": {
+      "bytes": 410976,
+      "sha256": "7e7c00ba3f7a95e97de5440f85affa9d54b420d31995b449e97a3e9ea00259f5"
+    },
+    "poet.tang.26000.json": {
+      "bytes": 392620,
+      "sha256": "74b5bed25622da1611928fdb31297fafadaf2876ce32ddb0c8b6d12d772979f4"
+    },
+    "poet.tang.27000.json": {
+      "bytes": 373469,
+      "sha256": "11626fcc310bbbcc601f7c8c4d8a664cef4907076cd7ec4f16268ee5b921ba44"
+    },
+    "poet.tang.28000.json": {
+      "bytes": 402527,
+      "sha256": "86a15affa95859046f869ffd4850886250d1a181e5151b1f096f728fb2d67502"
+    },
+    "poet.tang.29000.json": {
+      "bytes": 432343,
+      "sha256": "e1a0cffe17b4f109399db38f2b23f9b6668b8ca1c3c24e36d5cbe4f40a925862"
+    },
+    "poet.tang.30000.json": {
+      "bytes": 394062,
+      "sha256": "e71996f771d15476bae48751081b473b381774b5d335f6163b183f70a2eaed01"
+    },
+    "poet.tang.31000.json": {
+      "bytes": 406846,
+      "sha256": "f1efaf172d4f6fa9aaacfa4160feb766189989c3264da6ce3a6d64a7c97097bb"
+    },
+    "poet.tang.32000.json": {
+      "bytes": 417563,
+      "sha256": "fcb2096245719199249ad23e75eac6997b5a4341564dd1cf73ce8008975b3d74"
+    },
+    "poet.tang.33000.json": {
+      "bytes": 438157,
+      "sha256": "35abb37f65817ee4630cfeb2db286832e505873c477e12f14693bcd20e920885"
+    },
+    "poet.tang.34000.json": {
+      "bytes": 416020,
+      "sha256": "4b656a62b6a187792c96a632c7e33f443eabda8b48c4fb5dfdda72cf02003095"
+    },
+    "poet.tang.35000.json": {
+      "bytes": 381490,
+      "sha256": "a9671b350e58b805fda88b2c17fa0bf3a05313017d28485010e6f60a69bdf945"
+    },
+    "poet.tang.36000.json": {
+      "bytes": 393811,
+      "sha256": "1c8e71a32743b37d318bf8beb44b8809a8079011231cf3c7106e2c59f03c55b4"
+    },
+    "poet.tang.37000.json": {
+      "bytes": 376582,
+      "sha256": "4c37d2d92ee6fdd73299ef13c91e17b9cbb11ef59d1e024254db1eceb95dc7ae"
+    },
+    "poet.tang.38000.json": {
+      "bytes": 400487,
+      "sha256": "08b2ce85e59eac59fe621921b62c15528e9dfb6a102994297703ad67e14aa83f"
+    },
+    "poet.tang.39000.json": {
+      "bytes": 404803,
+      "sha256": "791d0171fe1dc88cee8424ae0281f495ed0dcdf042f97f2a3fc9b37e05e9426c"
+    },
+    "poet.tang.40000.json": {
+      "bytes": 361783,
+      "sha256": "851d0c3cb796c7f7c63a7765e28564b2c3be3d9691c9f43f88d4d3c64034b5d8"
+    },
+    "poet.tang.41000.json": {
+      "bytes": 376339,
+      "sha256": "3c12f59a5103e582eed9fe6ae13affddc030a31e9956efb13cb7768296ba7396"
+    },
+    "poet.tang.42000.json": {
+      "bytes": 390623,
+      "sha256": "060026beb06028864bce48e8074e2690f92a1dc5a76ee91f98f2d62b5f02a15c"
+    },
+    "poet.tang.43000.json": {
+      "bytes": 430665,
+      "sha256": "de5e658dccbcf0d2b38312b39a2423459b88ef893830bc145d453d82887a5753"
+    },
+    "poet.tang.44000.json": {
+      "bytes": 400949,
+      "sha256": "8c6d550818f5390413bc58fbb3af059d3fa4a92264b1bcf84439c2b0bb043985"
+    },
+    "poet.tang.45000.json": {
+      "bytes": 439632,
+      "sha256": "5177a4747b785f04897c36b77d5e033b11a7bcad759d1557fdb425166b8767f3"
+    },
+    "poet.tang.46000.json": {
+      "bytes": 402034,
+      "sha256": "287e548147e6959306b74c862a1ebe43cdca39adee34e2c63ae5d3b5eaced1f5"
+    },
+    "poet.tang.47000.json": {
+      "bytes": 389163,
+      "sha256": "8b43cce475ed43b1105a12a8bdcef32ac22dc056c5f2c616a2976a4103b5d8ac"
+    },
+    "poet.tang.48000.json": {
+      "bytes": 323882,
+      "sha256": "8df4861e8d7bc114e91d0a5e37d193f662485cd88b8d09289cc5ac9ab243c3ed"
+    },
+    "poet.tang.49000.json": {
+      "bytes": 402881,
+      "sha256": "418e5a082cb70c4f85ce842affec8828a53f6296882e45339c74d553fc46495e"
+    },
+    "poet.tang.50000.json": {
+      "bytes": 609835,
+      "sha256": "894bf4e729932d2b48ba731a48075347cf55626c08ac9f30b2fe412ca9e4e895"
+    },
+    "poet.tang.51000.json": {
+      "bytes": 549433,
+      "sha256": "9bd1b263807c5c64bca773b76d4861a49af19b76184f88260d6080bb03311928"
+    },
+    "poet.tang.52000.json": {
+      "bytes": 561704,
+      "sha256": "1124f4b27f46bd1ffaafdda530719eddbe41858778a0a13e4557ea4eb49ffef0"
+    },
+    "poet.tang.53000.json": {
+      "bytes": 480142,
+      "sha256": "75841062fa939e72ee12669859933c9178b88a5c5492bc9ba84d9ef7c6f1e65a"
+    },
+    "poet.tang.54000.json": {
+      "bytes": 467600,
+      "sha256": "cd2ba326b80ff8490723ad9fb1ace812306f0e433b74268420165068b0a975ac"
+    },
+    "poet.tang.55000.json": {
+      "bytes": 442729,
+      "sha256": "3782736dfee847958363d4adeff1236f148aff3726f2964963b17b06dad2f97b"
+    },
+    "poet.tang.56000.json": {
+      "bytes": 470081,
+      "sha256": "274ad6e13c069e35856e53b5dee6821ad2aa9bf8b2a5f969e2eb1234fe954bca"
+    },
+    "poet.tang.57000.json": {
+      "bytes": 234965,
+      "sha256": "e04c137b040c1a91e16614178c189d0c30a68e1d4657ea8fde8467601e3ac121"
+    }
+  },
+  "source_files": {
+    "prepare_data.py": {
+      "bytes": 10970,
+      "sha256": "7b6ffe013f7332d4fc0fd296f22d3cbe05ee7f8db6eaef60d9262053e22d1cf7"
+    },
+    "data_cleaning.py": {
+      "bytes": 6511,
+      "sha256": "d5a81caa696bdd2a1dd97885eff1d4b7319adde11375feb40b5520055f818800"
+    },
+    "tokenizer.py": {
+      "bytes": 2806,
+      "sha256": "a68c99c35e40727ea1ebf7be3bfec11759e4e1f3f8743528a4ca45e57b94bfce"
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "unicode": "15.1.0",
+    "conversion": {
+      "name": "OpenCC",
+      "config": "t2s",
+      "package": "opencc-python-reimplemented",
+      "version": "0.1.7"
+    }
+  },
+  "test_split": null,
+  "vocabulary_scope": "train_only",
+  "counts": {
+    "raw_records": 57607,
+    "accepted": 52716,
+    "rejected": 2482,
+    "quarantined": 1528,
+    "duplicate": 881
+  },
+  "reasons": {
+    "length_out_of_range": 2482,
+    "ambiguous_bracket": 1487,
+    "exact_duplicate_after_cleaning": 881,
+    "unbalanced_brackets": 39,
+    "residual_source_marker": 2
+  },
+  "candidate_operations": {
+    "unwrap_editorial_character": 513,
+    "remove_explicit_annotation": 5126
+  },
+  "accepted_operations": {
+    "unwrap_editorial_character": 427,
+    "remove_explicit_annotation": 4723
+  },
+  "split": {
+    "seed": 42,
+    "train_fraction_groups": 0.9,
+    "group_count": 52681,
+    "multi_text_group_count": 35,
+    "key": "remove_whitespace_and_Unicode_P_punctuation",
+    "exact_overlap": 0,
+    "normalized_overlap": 0,
+    "near_duplicate_check": "not_performed",
+    "train": {
+      "poems": 47444,
+      "characters": 2451750
+    },
+    "val": {
+      "poems": 5272,
+      "characters": 272163
+    }
+  },
+  "vocabulary": {
+    "size": 7739,
+    "scope": "train_only",
+    "val_unknown_characters": {
+      "⿰": 1,
+      "㗻": 2,
+      "㝡": 1,
+      "㝢": 1,
+      "㟮": 1,
+      "㾕": 1,
+      "䂓": 1,
+      "䖏": 2,
+      "䫿": 1,
+      "䱜": 1,
+      "侄": 1,
+      "俣": 1,
+      "傜": 1,
+      "儽": 1,
+      "吗": 1,
+      "啴": 2,
+      "嚾": 1,
+      "圉": 1,
+      "坫": 1,
+      "埞": 1,
+      "姱": 1,
+      "媞": 2,
+      "宀": 1,
+      "宷": 1,
+      "崽": 1,
+      "嵺": 2,
+      "嶻": 1,
+      "忄": 2,
+      "忪": 1,
+      "恞": 1,
+      "扔": 1,
+      "揪": 1,
+      "撺": 1,
+      "擗": 1,
+      "攉": 1,
+      "朞": 1,
+      "枡": 1,
+      "歜": 1,
+      "殑": 2,
+      "汛": 1,
+      "滫": 1,
+      "漦": 2,
+      "潎": 2,
+      "澟": 1,
+      "瀔": 1,
+      "瀯": 1,
+      "灜": 1,
+      "灨": 1,
+      "灬": 1,
+      "煠": 1,
+      "犗": 1,
+      "琇": 1,
+      "畸": 1,
+      "畺": 1,
+      "瘀": 1,
+      "皡": 1,
+      "皿": 1,
+      "盒": 1,
+      "睎": 1,
+      "瞎": 1,
+      "码": 1,
+      "砲": 1,
+      "碯": 1,
+      "稬": 1,
+      "箊": 1,
+      "篣": 1,
+      "籓": 1,
+      "糓": 1,
+      "縆": 1,
+      "繠": 1,
+      "缎": 1,
+      "缢": 2,
+      "翌": 1,
+      "翙": 1,
+      "肫": 1,
+      "胾": 1,
+      "苢": 1,
+      "蔌": 2,
+      "薶": 1,
+      "虤": 2,
+      "蚑": 1,
+      "蟖": 1,
+      "褏": 1,
+      "譣": 1,
+      "诒": 1,
+      "赟": 1,
+      "蹂": 1,
+      "逯": 1,
+      "酅": 2,
+      "酙": 1,
+      "铠": 1,
+      "関": 1,
+      "雭": 2,
+      "靁": 1,
+      "韨": 1,
+      "颒": 1,
+      "饍": 1,
+      "骘": 1,
+      "髧": 2,
+      "鬂": 1,
+      "魃": 1,
+      "鶆": 1,
+      "鸐": 1,
+      "麁": 1,
+      "黈": 1,
+      "𡡓": 1,
+      "𣰦": 1,
+      "𥐟": 1,
+      "𥷨": 1,
+      "𦈌": 1,
+      "𫈟": 1,
+      "𫍟": 2,
+      "𫏆": 1,
+      "𫗞": 1,
+      "𫗠": 1,
+      "𫗮": 1,
+      "𫚈": 1,
+      "𫛪": 1,
+      "𫜃": 1,
+      "𫞩": 1,
+      "𫭟": 1
+    },
+    "val_unknown_count": 137,
+    "val_unknown_rate": 0.00050337481582728
+  },
+  "output_files": {
+    "train.txt": {
+      "bytes": 7403791,
+      "sha256": "195edd76ee8bd4be0e2303bf1d5da33c14d61149540e7f1c4ea30a92a5632113"
+    },
+    "val.txt": {
+      "bytes": 821849,
+      "sha256": "e2595ea82a5e7b65891d94aabcb6b690714565ba2481e0120b4b128175e25162"
+    },
+    "vocab.json": {
+      "bytes": 115289,
+      "sha256": "07eb515c1762df6e2736120b6f6f388f75ab2db52483adeec83ac33cbd03f5b4"
+    },
+    "audit.jsonl": {
+      "bytes": 53334565,
+      "sha256": "6caa9090ec448ea6f5a30223a597b71a4021167911d0745cfa4c2b83c353ad9e"
+    }
+  }
+}

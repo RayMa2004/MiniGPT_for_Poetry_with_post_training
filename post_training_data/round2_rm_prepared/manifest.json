@@ -1,0 +1,104 @@
+{
+  "inputs": {
+    "samples": "c375927a1e6a873bf73f52bf03bf936bca4b5ff1feedf6f1d256c183f953ae10",
+    "pairs": "18b2d4dd3043dae94d63d22fafcdcf8e281f7b534830cf97a12c779aedf04596",
+    "preferences": "0ab97fa7b01e82248e6ccb442453d9e38ba1ddb7e6ed8131b5c6d7bf39cd1317"
+  },
+  "selection": {
+    "minimum_mean": 3.5,
+    "minimum_dimension": 3,
+    "max_per_task": 2
+  },
+  "summary": {
+    "input_samples": 3840,
+    "scored_samples": 0,
+    "scored_pairs": 1920,
+    "sft": {
+      "train": {
+        "count": 0,
+        "coverage": {}
+      },
+      "val": {
+        "count": 0,
+        "coverage": {}
+      },
+      "test": {
+        "count": 0,
+        "coverage": {}
+      }
+    },
+    "preferences": {
+      "train": {
+        "count": 1535,
+        "coverage": {
+          "prefix/wujue": 511,
+          "free/wujue": 256,
+          "free/qijue": 256,
+          "prefix/qijue": 512
+        }
+      },
+      "val": {
+        "count": 192,
+        "coverage": {
+          "prefix/wujue": 64,
+          "free/qijue": 32,
+          "prefix/qijue": 64,
+          "free/wujue": 32
+        }
+      },
+      "test": {
+        "count": 191,
+        "coverage": {
+          "prefix/wujue": 63,
+          "prefix/qijue": 64,
+          "free/wujue": 32,
+          "free/qijue": 32
+        }
+      }
+    },
+    "unconditional_note": "空开头没有未见prompt泛化；此处按固定采样任务/seed划分候选池并排除跨集合完全重复文本。",
+    "readiness": {
+      "sft": {
+        "ready": false,
+        "counts": {
+          "train": 0,
+          "val": 0
+        },
+        "missing": {
+          "train": [
+            "free/qijue",
+            "free/wujue",
+            "prefix/qijue",
+            "prefix/wujue"
+          ],
+          "val": [
+            "free/qijue",
+            "free/wujue",
+            "prefix/qijue",
+            "prefix/wujue"
+          ]
+        }
+      },
+      "preferences": {
+        "ready": true,
+        "counts": {
+          "train": 1535,
+          "val": 192
+        },
+        "missing": {
+          "train": [],
+          "val": []
+        }
+      }
+    },
+    "labeling_status": "complete"
+  },
+  "outputs": {
+    "sft/train.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sft/val.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sft/test.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preferences/train.jsonl": "dfe46a8f53efd7421b7963d2baef763d7149bcb4f614d51a9d039cd8bff4f644",
+    "preferences/val.jsonl": "5e63103ce6ef908c77018e4f91b240780f8a9717a004072f6b59b34428d41f64",
+    "preferences/test.jsonl": "ada29990a4956f590e63e996e1948c5affcb062be8ba10a7084c63a71f238570"
+  }
+}

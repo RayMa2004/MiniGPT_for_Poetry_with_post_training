@@ -1,0 +1,15 @@
+[project]
+name = "mini-gpt-poetry"
+version = "0.5.2"
+description = "中文诗词 MiniGPT v4.2，第二轮 PPO 与离线可恢复评估"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.8.0",
+    "numpy>=1.26,<3",
+    "tensorboard>=2.18,<3",
+    "opencc-python-reimplemented>=0.1.7,<0.2",
+]
+
+[tool.uv]
+package = false

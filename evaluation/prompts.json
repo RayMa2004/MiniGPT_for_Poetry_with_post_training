@@ -1,0 +1,13 @@
+[
+  {"id": "empty", "prompt": "", "target_form": null},
+  {"id": "single_spring", "prompt": "春", "target_form": null},
+  {"id": "single_moon", "prompt": "月", "target_form": null},
+  {"id": "double_autumn", "prompt": "秋风", "target_form": null},
+  {"id": "double_river", "prompt": "江南", "target_form": null},
+  {"id": "opening_bed", "prompt": "床前", "target_form": null},
+  {"id": "opening_spring", "prompt": "春眠", "target_form": null},
+  {"id": "wujue_empty", "prompt": "", "target_form": "wujue"},
+  {"id": "wujue_mountain", "prompt": "山", "target_form": "wujue"},
+  {"id": "qijue_empty", "prompt": "", "target_form": "qijue"},
+  {"id": "qijue_river", "prompt": "江南", "target_form": "qijue"}
+]

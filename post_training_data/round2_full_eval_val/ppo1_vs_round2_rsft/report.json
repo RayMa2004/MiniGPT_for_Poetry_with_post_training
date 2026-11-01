@@ -1,0 +1,61 @@
+{
+  "overall": {
+    "candidate_wins": 60,
+    "baseline_wins": 34,
+    "ties": 0,
+    "both_bad": 2,
+    "identical": 0,
+    "count": 96,
+    "candidate_win_rate": 0.625,
+    "decisive_win_rate": 0.6382978723404256,
+    "both_bad_rate": 0.020833333333333332
+  },
+  "prefix/wujue": {
+    "candidate_wins": 18,
+    "baseline_wins": 13,
+    "ties": 0,
+    "both_bad": 1,
+    "identical": 0,
+    "count": 32,
+    "candidate_win_rate": 0.5625,
+    "decisive_win_rate": 0.5806451612903226,
+    "both_bad_rate": 0.03125
+  },
+  "free/qijue": {
+    "candidate_wins": 9,
+    "baseline_wins": 7,
+    "ties": 0,
+    "both_bad": 0,
+    "identical": 0,
+    "count": 16,
+    "candidate_win_rate": 0.5625,
+    "decisive_win_rate": 0.5625,
+    "both_bad_rate": 0.0
+  },
+  "prefix/qijue": {
+    "candidate_wins": 19,
+    "baseline_wins": 12,
+    "ties": 0,
+    "both_bad": 1,
+    "identical": 0,
+    "count": 32,
+    "candidate_win_rate": 0.59375,
+    "decisive_win_rate": 0.6129032258064516,
+    "both_bad_rate": 0.03125
+  },
+  "free/wujue": {
+    "candidate_wins": 14,
+    "baseline_wins": 2,
+    "ties": 0,
+    "both_bad": 0,
+    "identical": 0,
+    "count": 16,
+    "candidate_win_rate": 0.875,
+    "decisive_win_rate": 0.875,
+    "both_bad_rate": 0.0
+  },
+  "status": "complete",
+  "split": "val",
+  "matched_count": 96,
+  "interpretation": "AI-judged matched samples, not human ground truth. Repeated empty-prefix samples do not establish unseen-prompt generalization; inspect real human blind ratings."
+}

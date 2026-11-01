@@ -1,0 +1,4 @@
+torch>=2.8.0
+numpy>=1.26,<3
+tensorboard>=2.18,<3
+opencc-python-reimplemented>=0.1.7,<0.2

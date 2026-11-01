@@ -1,0 +1,74 @@
+{
+  "inputs": {
+    "samples": "b011da40fde59eb1a37bd225abd181ad87d484a455cfefaa1acd082a89f94ec5",
+    "scores": "00e9485bcccb910dea3270916ea73ca64555253b8274bb30e09df6eec49a7a49",
+    "pairs": "7a6dd02fb7dddb87b3d96d61f21604acf556e962bd84ee7c6514a427484e49ca",
+    "preferences": "62d07c4275263da38e8ac8cd38fc13ac090287a725aebf0683c327a3df85d426"
+  },
+  "selection": {
+    "minimum_mean": 3.5,
+    "minimum_dimension": 3,
+    "max_per_task": 2
+  },
+  "summary": {
+    "input_samples": 160,
+    "scored_samples": 160,
+    "scored_pairs": 160,
+    "sft": {
+      "train": {
+        "count": 4,
+        "coverage": {
+          "free/wujue": 2,
+          "prefix/wujue": 2
+        }
+      },
+      "val": {
+        "count": 0,
+        "coverage": {}
+      },
+      "test": {
+        "count": 0,
+        "coverage": {}
+      }
+    },
+    "preferences": {
+      "train": {
+        "count": 124,
+        "coverage": {
+          "free/wujue": 31,
+          "prefix/qijue": 31,
+          "prefix/wujue": 32,
+          "free/qijue": 30
+        }
+      },
+      "val": {
+        "count": 16,
+        "coverage": {
+          "free/qijue": 4,
+          "prefix/qijue": 4,
+          "free/wujue": 4,
+          "prefix/wujue": 4
+        }
+      },
+      "test": {
+        "count": 15,
+        "coverage": {
+          "prefix/wujue": 4,
+          "free/wujue": 4,
+          "free/qijue": 3,
+          "prefix/qijue": 4
+        }
+      }
+    },
+    "unconditional_note": "空开头没有未见prompt泛化；此处按固定采样任务/seed划分候选池并排除跨集合完全重复文本。",
+    "labeling_status": "complete"
+  },
+  "outputs": {
+    "sft/train.jsonl": "e869c1cae0e7e3c0286d64713b87a53212b7b4e6921fcac236c73b27d70b1ea8",
+    "sft/val.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sft/test.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preferences/train.jsonl": "061dc18021944b3bdb277a39a35ae3e68b9739095acd2403ab71f3e3b61221ed",
+    "preferences/val.jsonl": "e255914d212b1215c4edcf0a367354b646ddb15e435441d968e5457c5def9422",
+    "preferences/test.jsonl": "2f7ca313f16a59c7db791a1b0ff6ac64eae1eee54efe6f8ad77f8f2785a59b16"
+  }
+}

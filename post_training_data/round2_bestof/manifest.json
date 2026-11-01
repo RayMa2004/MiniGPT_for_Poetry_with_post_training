@@ -1,0 +1,70 @@
+{
+  "kind": "reward_bestof_v1",
+  "inputs": {
+    "samples": "50ef4cf999ad1d5b9fbf5baa6e4c28913d2f786d4707a937e688b375ca8d5da5",
+    "candidate_manifest": "99424eedb733a222b6cd82d3fbb529a2d00627d9818c7ee65283a61c029b86d0",
+    "reward_checkpoint": "ad65a291b2d141c11166be5688521da79f7d2758352c8e80e66c8b953f4c71b7",
+    "reward_validation": "65c3cca366a6128548d1b86de93ac2f082de21230dded384b25699688ee23389",
+    "vocab": "07eb515c1762df6e2736120b6f6f388f75ab2db52483adeec83ac33cbd03f5b4"
+  },
+  "selection": {
+    "top_k": 8,
+    "method": "reward_model_best_of_k",
+    "tie_break": "sample_id",
+    "duplicates": "reserve most held-out split"
+  },
+  "summary": {
+    "input_samples": 7680,
+    "sft": {
+      "train": {
+        "count": 768,
+        "coverage": {
+          "prefix/wujue": 256,
+          "free/wujue": 128,
+          "free/qijue": 128,
+          "prefix/qijue": 256
+        }
+      },
+      "val": {
+        "count": 96,
+        "coverage": {
+          "prefix/wujue": 32,
+          "free/qijue": 16,
+          "prefix/qijue": 32,
+          "free/wujue": 16
+        }
+      },
+      "test": {
+        "count": 96,
+        "coverage": {
+          "prefix/wujue": 32,
+          "prefix/qijue": 32,
+          "free/wujue": 16,
+          "free/qijue": 16
+        }
+      }
+    },
+    "readiness": {
+      "sft": {
+        "ready": true,
+        "counts": {
+          "train": 768,
+          "val": 96
+        },
+        "missing": {
+          "train": [],
+          "val": []
+        }
+      }
+    }
+  },
+  "outputs": {
+    "sft/train.jsonl": "6d643657d5c8852375c8c1988c4d16df593d053939cc910a354b44c884f5e042",
+    "sft/val.jsonl": "1647a6b060780327cc4d043bd6fcfa073c2e772d3b196c24b1f1b08a56982d47",
+    "sft/test.jsonl": "1edc7f814337fc33e2832df66f71b19b922e5005c67754da971d6f8c3765f22e",
+    "preferences/train.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preferences/val.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preferences/test.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reward_scores.jsonl": "297e702f175930f1b7312636407dad0a0ec45f98dde0a325a0bd021e64b74e16"
+  }
+}

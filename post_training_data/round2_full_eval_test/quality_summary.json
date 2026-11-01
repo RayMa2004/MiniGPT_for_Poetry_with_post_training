@@ -1,0 +1,182 @@
+{
+  "split": "test",
+  "scope": "AI per-poem ratings; held-out task groups, not human ground truth",
+  "quality_threshold": {
+    "minimum_mean": 3.5,
+    "minimum_dimension": 3
+  },
+  "judge_id": "487e0b327921a652848097363e980d0321400d7f9c85123d651f2164c7891dad",
+  "models": {
+    "baseline": {
+      "count": 96,
+      "dimension_mean": {
+        "fluency": 2.8229166666666665,
+        "coherence": 2.4791666666666665,
+        "imagery": 2.7708333333333335,
+        "poeticness": 2.5104166666666665
+      },
+      "qualified_count": 13,
+      "qualified_rate": 0.13541666666666666,
+      "by_group": {
+        "free/qijue": {
+          "count": 16,
+          "dimension_mean": {
+            "fluency": 2.8125,
+            "coherence": 2.3125,
+            "imagery": 2.8125,
+            "poeticness": 2.25
+          },
+          "qualified_count": 1,
+          "qualified_rate": 0.0625
+        },
+        "free/wujue": {
+          "count": 16,
+          "dimension_mean": {
+            "fluency": 3.0,
+            "coherence": 2.4375,
+            "imagery": 2.75,
+            "poeticness": 2.375
+          },
+          "qualified_count": 3,
+          "qualified_rate": 0.1875
+        },
+        "prefix/qijue": {
+          "count": 32,
+          "dimension_mean": {
+            "fluency": 2.5625,
+            "coherence": 2.40625,
+            "imagery": 2.59375,
+            "poeticness": 2.4375
+          },
+          "qualified_count": 2,
+          "qualified_rate": 0.0625
+        },
+        "prefix/wujue": {
+          "count": 32,
+          "dimension_mean": {
+            "fluency": 3.0,
+            "coherence": 2.65625,
+            "imagery": 2.9375,
+            "poeticness": 2.78125
+          },
+          "qualified_count": 7,
+          "qualified_rate": 0.21875
+        }
+      }
+    },
+    "round2_rsft": {
+      "count": 96,
+      "dimension_mean": {
+        "fluency": 2.78125,
+        "coherence": 2.5729166666666665,
+        "imagery": 2.7604166666666665,
+        "poeticness": 2.5520833333333335
+      },
+      "qualified_count": 9,
+      "qualified_rate": 0.09375,
+      "by_group": {
+        "free/qijue": {
+          "count": 16,
+          "dimension_mean": {
+            "fluency": 2.5625,
+            "coherence": 2.25,
+            "imagery": 2.625,
+            "poeticness": 2.25
+          },
+          "qualified_count": 0,
+          "qualified_rate": 0.0
+        },
+        "free/wujue": {
+          "count": 16,
+          "dimension_mean": {
+            "fluency": 3.125,
+            "coherence": 2.75,
+            "imagery": 3.0625,
+            "poeticness": 2.8125
+          },
+          "qualified_count": 3,
+          "qualified_rate": 0.1875
+        },
+        "prefix/qijue": {
+          "count": 32,
+          "dimension_mean": {
+            "fluency": 2.5,
+            "coherence": 2.40625,
+            "imagery": 2.5,
+            "poeticness": 2.3125
+          },
+          "qualified_count": 0,
+          "qualified_rate": 0.0
+        },
+        "prefix/wujue": {
+          "count": 32,
+          "dimension_mean": {
+            "fluency": 3.0,
+            "coherence": 2.8125,
+            "imagery": 2.9375,
+            "poeticness": 2.8125
+          },
+          "qualified_count": 6,
+          "qualified_rate": 0.1875
+        }
+      }
+    },
+    "round2_ppo": {
+      "count": 96,
+      "dimension_mean": {
+        "fluency": 2.8854166666666665,
+        "coherence": 2.5729166666666665,
+        "imagery": 2.875,
+        "poeticness": 2.625
+      },
+      "qualified_count": 11,
+      "qualified_rate": 0.11458333333333333,
+      "by_group": {
+        "free/qijue": {
+          "count": 16,
+          "dimension_mean": {
+            "fluency": 2.9375,
+            "coherence": 2.375,
+            "imagery": 2.9375,
+            "poeticness": 2.6875
+          },
+          "qualified_count": 3,
+          "qualified_rate": 0.1875
+        },
+        "free/wujue": {
+          "count": 16,
+          "dimension_mean": {
+            "fluency": 3.25,
+            "coherence": 3.0,
+            "imagery": 3.1875,
+            "poeticness": 2.8125
+          },
+          "qualified_count": 5,
+          "qualified_rate": 0.3125
+        },
+        "prefix/qijue": {
+          "count": 32,
+          "dimension_mean": {
+            "fluency": 2.625,
+            "coherence": 2.40625,
+            "imagery": 2.59375,
+            "poeticness": 2.5
+          },
+          "qualified_count": 0,
+          "qualified_rate": 0.0
+        },
+        "prefix/wujue": {
+          "count": 32,
+          "dimension_mean": {
+            "fluency": 2.9375,
+            "coherence": 2.625,
+            "imagery": 2.96875,
+            "poeticness": 2.625
+          },
+          "qualified_count": 3,
+          "qualified_rate": 0.09375
+        }
+      }
+    }
+  }
+}

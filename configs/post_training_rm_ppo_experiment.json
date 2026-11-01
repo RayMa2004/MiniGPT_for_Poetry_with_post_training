@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "paths": {
+    "checkpoint": "checkpoints/best.pt",
+    "vocab": "data/vocab.json",
+    "output_root": "post_training_runs"
+  },
+  "api": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "key_env": "POSTTRAIN_API_KEY",
+    "protocol": "chat_completions",
+    "response_format": "json_object",
+    "timeout_seconds": 90,
+    "max_retries": 2,
+    "max_output_tokens": 2000,
+    "max_requests": 200,
+    "temperature": 0,
+    "token_parameter": "max_tokens",
+    "thinking": {
+      "type": "disabled"
+    },
+    "batch_size": 8
+  },
+  "selection": {
+    "minimum_mean": 3.5,
+    "minimum_dimension": 3,
+    "max_per_task": 2
+  },
+  "sft": {
+    "epochs": 3,
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0
+  },
+  "reward": {
+    "epochs": 5,
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "unfreeze_last_blocks": 0,
+    "minimum_val_accuracy": 0.64,
+    "minimum_val_pairs": 30
+  },
+  "ppo": {
+    "updates": 100,
+    "rollout_batch_size": 8,
+    "ppo_epochs": 2,
+    "learning_rate": 1e-06,
+    "value_learning_rate": 0.0001,
+    "gamma": 1.0,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "value_clip_range": 0.2,
+    "value_coefficient": 0.5,
+    "entropy_coefficient": 0.0,
+    "kl_coefficient": 0.05,
+    "target_kl": 0.1,
+    "grad_clip": 1.0,
+    "reward_clip": 5.0,
+    "reference_kl_limit": 0.2,
+    "snapshot_every": 10
+  }
+}

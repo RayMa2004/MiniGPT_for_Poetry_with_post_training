@@ -5,11 +5,12 @@
 checkpoints/
 post_training_runs/
 
-# 大数据文件
-*.jsonl
+# 大训练数据（按需，如果数据要公开就注释掉下面几行）
+post_training_data/
 data/audit.jsonl
+*.jsonl
 
-# 其它
+# Python
 __pycache__/
 *.pyc
 .venv/

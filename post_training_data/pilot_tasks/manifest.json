@@ -1,8 +1,0 @@
-{
-  "seed": 42,
-  "namespace": "pilot",
-  "task_count": 40,
-  "tasks_sha256": "3e90992999da3f66c27e3aafb201882d52a18dc605c9a52030df20dd82c41758",
-  "split_policy": "prefix_group_and_independent_unconditional_pools",
-  "source_prefixes_sha256": "12b99f85828ebe6368204242f10b88a36f1ab60bd6943d76e90649751a743016"
-}
